@@ -1,13 +1,12 @@
-# Серверная часть (Python)
-# Создайте файл server.py
-
-from flask import Flask, render_template
+from flask import Flask
 
 app = Flask(__name__)
 
-@app.route('/')
-def index():
-    return render_template('index.html')
+@app.route("/")
+def server_info():
+    # Замените "example.aternos.me" на реальный IP-адрес вашего сервера
+    server_ip = "raota_kopatel.aternos.me"
+    return f"IP-адрес сервера: {server_ip}"
 
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == "__main__":
+    app.run()
