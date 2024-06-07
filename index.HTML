@@ -1,36 +1,16 @@
-<!-- Клиентская часть (HTML) -->
-<!-- Создайте файл index.html -->
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сервер Minecraft</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-        .server-info {
-            margin-top: 100px;
-        }
-        .play-button {
-            margin-top: 20px;
-        }
-    </style>
+    <title>Информация о сервере Minecraft</title>
 </head>
 <body>
-    <div class="server-info">
-        <h1>Сервер Minecraft</h1>
-        <p>Адрес: <a href="https://raota_kopatel.aternos.me">raota_kopatel.aternos.me</a></p>
-        <p>Версия: 1.20.1</p>
-        <p>Читы: разрешены</p>
-    </div>
-    <div class="play-button">
-        <a href="https://raota_kopatel.aternos.me" target="_blank">
-            <button>Играть</button>
-        </a>
-    </div>
+    <h1>Информация о сервере</h1>
+    <p>IP-адрес сервера: <span id="server-ip"></span></p>
+
+    <script>
+        // Замените "example.aternos.me" на реальный IP-адрес вашего сервера
+        const serverIp = "raota_kopatel.aternos.me";
+        document.getElementById("server-ip").textContent = serverIp;
+    </script>
 </body>
 </html>
